@@ -37,11 +37,6 @@
             key-positions = <0 1>;
         };
 
-        tb-scroll {
-            bindings = <&mo 5>;
-            key-positions = <20 21>;
-        };
-
         tb-snipe6 {
             bindings = <&mo 6>;
             key-positions = <32 33>;
@@ -101,7 +96,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &mkp LCLK  &trans  &mkp RCLK  &mkp MCLK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &mkp LCLK  &mo 5   &mkp RCLK  &mkp MCLK  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                &trans     &trans
             >;
@@ -121,11 +116,11 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &mkp LCLK  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                             &trans  &trans
             >;
         };
     };
