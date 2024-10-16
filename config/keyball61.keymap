@@ -24,6 +24,30 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        right-reset {
+            bindings = <&sys_reset>;
+            key-positions = <9 10 11>;
+        };
+
+        left-reset {
+            bindings = <&sys_reset>;
+            key-positions = <0 1 2>;
+        };
+
+        tb-scroll {
+            bindings = <&mo 5>;
+            key-positions = <32 33 31>;
+        };
+
+        tb-snipe6 {
+            bindings = <&mo 6>;
+            key-positions = <32 33>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
