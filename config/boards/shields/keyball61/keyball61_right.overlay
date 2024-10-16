@@ -65,9 +65,8 @@
         scroll-layers = <5>;
         snipe-layers = <6>;
 	automouse-layer = <4>;
-        /*   reference   */
+        /*   reference if intends to map the behaviro more than 1 layer   */
         // scroll-layers = <2 3>;
-        // automouse-layer = <4>;
     };
 };
 
