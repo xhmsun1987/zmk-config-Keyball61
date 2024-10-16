@@ -29,12 +29,12 @@
 
         right-reset {
             bindings = <&sys_reset>;
-            key-positions = <9 10 11>;
+            key-positions = <10 11>;
         };
 
         left-reset {
             bindings = <&sys_reset>;
-            key-positions = <0 1 2>;
+            key-positions = <0 1>;
         };
 
         tb-scroll {
