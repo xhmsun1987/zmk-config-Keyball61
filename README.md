@@ -33,11 +33,13 @@ Thanks for the above contribution and *[inorichi](https://github.com/inorichi/zm
 
 ## Trackball Configuration
 1. To change the Scroll Layer, go to `zmk-config-Keyball61/config/boards/shields/keyball61/keyball61_right.overlay`: [scroll-layers=5](https://github.com/superxc3/zmk-config-Keyball61/blob/e7d3e26597f22324cf7e9b96c2aa8b27465a058a/config/boards/shields/keyball61/keyball61_right.overlay#L65). Change the number 5 to your preferred layer.
-2. To change the defaul CPI, go to `zmk-config-Keyball61/config/boards/shields/keyball61/keyball61_right.conf`: [CONFIG_PMW3610_CPI=1200](https://github.com/superxc3/zmk-config-Keyball61/blob/e7d3e26597f22324cf7e9b96c2aa8b27465a058a/config/boards/shields/keyball61/keyball61_right.conf#L7C1-L7C24). Other trackball config could be changed in the same file too, eg., snipe CPI, scroll direction etc. 
+2. To change the defaul CPI, go to `zmk-config-Keyball61/config/boards/shields/keyball61/keyball61_right.conf`: [CONFIG_PMW3610_CPI=1200](https://github.com/superxc3/zmk-config-Keyball61/blob/e7d3e26597f22324cf7e9b96c2aa8b27465a058a/config/boards/shields/keyball61/keyball61_right.conf#L7C1-L7C24). Other trackball config could be changed in the same file too, eg., snipe CPI, scroll direction etc.
+3. You may turn off the Auto Mouse layer if you find it is too sensitive, go to `zmk-config-Keyball61/blob/main/config/boards/shields/keyball61/keyball61_right.overlay`: [automouse-layer = <4>;](https://github.com/superxc3/zmk-config-Keyball61/blob/8d984340d95cbd6761786201249db9447692efab/config/boards/shields/keyball61/keyball61_right.overlay#L67) and add `//` in front of it, or just remove the line. 
 
 ## Suggested Combo
 We have added a few combos to the default keymap. Feel free to adjust for your needs. 
-![image](https://github.com/user-attachments/assets/1d802a7e-c73a-413e-94e3-8dbdb62e1878)
+![image](https://github.com/user-attachments/assets/2f52d4c5-2b0d-4f64-8d32-78c93e9ae271)
+
 
 
 
