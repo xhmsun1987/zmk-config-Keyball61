@@ -14,7 +14,7 @@ Thanks for the above contribution and *[inorichi](https://github.com/inorichi/zm
 
 ## Notes
 ### Flashing
-1. If you only change the keymap, you can just flash to the master side. For Keyball series, master is on the right. That means you dont need to flash left and right.
+1. If you only change the keymap, you can just flash to the master side. For Keyball series, master is on the right. That means you dont need to flash left and right.j
 2. If double press reset button doesnt call out the new folder to drag your uf2, that means you have to double press even faster.
 3. You dont need to delete any files in nicenano folder, just drag your new right uf2 to it and ignore and skip any error.
 4. Normally doesnt need to repair after format. It will paired automatically.
