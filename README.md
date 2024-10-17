@@ -20,11 +20,14 @@ Thanks for the above contribution and *[inorichi](https://github.com/inorichi/zm
 4. Normally doesnt need to re-pair after format. It will paired automatically.
    
 ### Charging
-5. You can just plug in cable and flip the power button on to charge.
+5. You can just plug in cable and flip the power button on to charge. Push to left on both sides to turn on the keyboard.
 6. You can charge both sides togehter. Slave (left) normally lasts longer than the master (right).
 7. If you want to make sure flawless connection, you can plug in cable to right and use as wired mode. Left doesnt need to plug in wire and remains wireless.
 8. If you want to keep your battery healthy yet want to make sure flawless connection, you can flip the power button off and plug in cable to right. This makes sure the board is using in wired mode but doesnt always charge the battery.
 
+### Switch Installation
+9. Please note that thumb area switch is upside down compare to the other zones.
+10. Thumb supports v1 and v2 choc sockets too. You have to change the switch plate and shorter screw provided in the package.
  
 ## Trackball Layer
 1. `Auto Mouse`: Layer 4 (when you move the trackball, it automatically goes to Layer 4. `J` for left click, `L` for right click, `:"` for middle click, you always can remap to something else in keymap editor. There is timeout for this automouse layer. It is fixed atm).
