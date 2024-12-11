@@ -12,6 +12,11 @@ Thanks for the above contribution and *[inorichi](https://github.com/inorichi/zm
 [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/) <br>
 [Github, Keymap Editor Setup and Flashing](https://github.com/superxc3/zmk_config_sofle#steps) - using Sofle wireless as reference<br>
 
+## Nice-view-gem
+Flashed with default display, if you like alternative, you can check out [M165437's nice-view-gem](https://github.com/M165437/nice-view-gem).
+![preview](https://github.com/user-attachments/assets/509cb3fa-2ab5-49a3-a4b6-b871f510daf3)
+
+
 ## Notes
 ### Flashing
 1. If you only change the keymap, you can just flash to the master side. For Keyball series, master is on the right. That means you dont need to flash left and right.
