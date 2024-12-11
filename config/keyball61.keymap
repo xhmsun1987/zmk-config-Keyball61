@@ -72,11 +72,11 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&trans  &trans      &trans        &trans        &trans        &trans                  &trans          &trans     &trans            &trans             &trans  &trans
-&trans  &trans      &trans        &trans        &trans        &trans                  &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
-&trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans                  &kp UNDERSCORE  &kp PLUS   &trans            &trans             &trans  &trans
-&trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans          &trans     &trans            &trans             &trans  &trans
-&trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans                                                          &trans  &trans
+&trans          &trans        &trans        &trans        &trans        &trans                        &trans          &trans     &trans            &trans             &trans  &bootloader
+&trans          &trans        &trans        &trans        &trans        &trans                        &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 2  &bt BT_SEL 4                  &kp UNDERSCORE  &kp PLUS   &trans            &trans             &trans  &trans
+&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans          &trans     &trans            &trans             &trans  &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans                                                          &trans  &trans
             >;
         };
 
@@ -94,11 +94,11 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &mkp LCLK  &mo 5   &mkp RCLK  &mkp MCLK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans     &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans     &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &trans  &mkp LCLK  &mo 5   &mkp RCLK  &mkp MCLK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans                                &trans     &trans
             >;
         };
 
@@ -116,11 +116,11 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &mkp LCLK  &mo 5   &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                &trans  &trans
+&bootloader  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans     &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans                  &trans  &mkp LCLK  &mo 5   &mkp RCLK  &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                &trans  &trans
             >;
         };
     };
