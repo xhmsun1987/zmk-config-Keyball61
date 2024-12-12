@@ -37,6 +37,7 @@
                 <NRF_PSEL(SPIM_MISO, 0, 10)>;
         };
     };
+
     spi1_sleep: spi1_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
@@ -46,27 +47,30 @@
         };
     };
 
-&pinctrl {
-spi2_default: spi2_default {
-				group1 {
-						psels = <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-						 <NRF_PSEL(SPIM_SCK,	0,8)>;
-				};
-spi2_sleep: spi2_sleep {
-				group1 {
-						psels = <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-						 <NRF_PSEL(SPIM_SCK,	0,8)>;
-						low-power-enable;
-				};
+    // New SPI2 configuration
+    spi2_default: spi2_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                   <NRF_PSEL(SPIM_SCK, 0, 8)>;
+        };
+    };
+
+    spi2_sleep: spi2_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                   <NRF_PSEL(SPIM_SCK, 0, 8)>;
+            low-power-enable;
+        };
+    };
 };
-};
-nice_view_spi: &spi2 {
+
+&spi1 {
+    status = "okay";
     compatible = "nordic,nrf-spim";
-    pinctrl-0 = <&spi2_default>;
-    pinctrl-1 = <&spi2_sleep>;
+    pinctrl-0 = <&spi1_default>;
+    pinctrl-1 = <&spi1_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >;
-};
+    cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
         status = "okay";
@@ -76,10 +80,18 @@ nice_view_spi: &spi2 {
         irq-gpios = <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         scroll-layers = <5>;
         snipe-layers = <6>;
-	automouse-layer = <4>;
-        /*   reference if intends to map the behaviro more than 1 layer   */
-        // scroll-layers = <2 3>;
+        automouse-layer = <4>;
     };
+};
+
+// New SPI2 configuration for nice view
+&spi2 {
+    status = "okay";
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi2_default>;
+    pinctrl-1 = <&spi2_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 };
 
 &pinctrl {
@@ -123,11 +135,10 @@ nice_view_spi: &spi2 {
     };
 };
 
-/ {
+{
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
 
   };
 };
-
