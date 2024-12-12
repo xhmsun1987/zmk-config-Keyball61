@@ -50,13 +50,7 @@ nice_view_spi: &spi2 {
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >;
 };
-nice_view_spi: &spi2 {
-    compatible = "nordic,nrf-spim";
-    pinctrl-0 = <&spi2_default>;
-    pinctrl-1 = <&spi2_sleep>;
-    pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >;
-};
+
 
 
 &spi1 {
