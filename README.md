@@ -8,6 +8,11 @@ Firmware: *[Amos698](https://github.com/Amos698)* <br>
 # XCMKB session
 Thanks for the above contribution and *[inorichi](https://github.com/inorichi/zmk-pmw3610-driver)* too.
 
+
+|![image](https://github.com/user-attachments/assets/c43ea05e-a177-4647-b702-42f9a5989fd8)|
+|:--:|
+| Keyball61 wireless with niceview |
+
 ## Quick Link
 [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/) <br>
 [Github, Keymap Editor Setup and Flashing](https://github.com/superxc3/zmk_config_sofle#steps) - using Sofle wireless as reference<br>
