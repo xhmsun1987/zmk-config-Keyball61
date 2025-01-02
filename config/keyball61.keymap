@@ -55,7 +55,7 @@
 &kp TAB         &kp Q      &kp W         &kp E         &kp R   &kp T                                                 &kp Y            &kp U   &kp I      &kp O    &kp P          &kp BACKSLASH
 &mo 3           &kp A      &kp S         &kp D         &kp F   &kp G                                                 &kp H            &kp J   &kp K      &kp L    &kp SEMI       &kp SQT
 &kp LEFT_SHIFT  &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RS(LEFT_BRACKET)  &kp RIGHT_BRACKET  &kp N            &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-&kp GLOBE       &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mo 6   &lt 4 SPACE  &mo 5                 &kp ENTER          &lt 2 BACKSPACE                              &kp RIGHT_ALT  &kp DELETE
+&kp GLOBE       &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mo 6   &lt 4 SPACE  &mo 5                 &kp ENTER          &lt 2 BACKSPACE                              &kp RIGHT_ALT  &kp BACKSPACE
             >;
         };
 
@@ -85,11 +85,11 @@
         function_layer {
             label = "FUN";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans          &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans          &kp UP_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                  &trans        &trans
+&trans  &trans  &trans          &trans          &trans     &trans                  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans     &trans                  &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans                  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans          &trans          &trans     &trans  &trans  &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans          &trans          &trans     &trans  &trans  &trans  &trans                                                   &trans  &trans
             >;
         };
 
