@@ -10,6 +10,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -54,8 +57,9 @@
         wife: wife {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(Y) &kp I &kp N &kp G &kp H &kp U &kp I &kp LS(L) &kp I>;
+            bindings = <&none &kp W &kp I &kp F &kp E &kp I &kp S &kp LS(Y) &kp I &kp N &kp G &kp H &kp U &kp I &kp LS(L) &kp I>;
             label = "WIFE";
+            wait-ms = <100>;
         };
     };
 
