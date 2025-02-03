@@ -52,7 +52,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_SHIFT &kp LEFT_COMMAND &kp NUMBER_4>;
+                <&kp LEFT_CONTROL &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
 
             label = "SCREENSHOT";
         };
