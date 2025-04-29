@@ -93,11 +93,11 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                              &trans          &trans     &trans            &trans             &trans  &bootloader
-&trans  &trans  &trans  &trans  &trans  &trans                              &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                              &kp UNDERSCORE  &kp PLUS   &kp GRAVE         &kp SINGLE_QUOTE   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &trans          &trans     &trans            &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans                                                          &trans  &trans
+&trans  &trans  &trans  &trans                &trans                 &trans                              &trans          &trans     &trans            &trans             &trans  &bootloader
+&trans  &trans  &trans  &trans                &trans                 &trans                              &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
+&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                              &kp UNDERSCORE  &kp PLUS   &kp GRAVE         &kp SINGLE_QUOTE   &trans  &trans
+&trans  &trans  &trans  &trans                &trans                 &trans  &kp PAGE_UP  &kp PAGE_DOWN  &trans          &trans     &trans            &trans             &trans  &trans
+&trans  &trans  &trans  &trans                &trans                 &trans  &trans       &trans         &trans                                                          &trans  &trans
             >;
         };
 
